@@ -28,23 +28,24 @@ body {
     max-width: 68.75em;
     margin: 0 auto;
     /* border: 1px red solid; */
-    padding: 3em;
+    padding: 1em;
 }
 .container-content {
-    background: rgb(33, 33, 35);
-    display: flex;
+    /* background: rgb(33, 33, 35); */
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto; */
     /* border: 1px red solid; */
-    padding: 1em;
+    /* padding: 1em; */
 }
 .content {
     display: flex;
     flex-direction: column;
-
-    max-width: 900px;
-    width: 100%;
+    background: rgb(33, 33, 35);
+    padding: 1em;
+    /* max-width: 900px;
+    width: 100%; */
     margin: 0 auto;
     /* border: 1px red solid; */
 }
@@ -100,4 +101,15 @@ body {
     color: #fff;
     font-size: 1.5em;
     font-family: Arial-regular;
+}
+
+
+
+@media screen and (max-width: 466px) {
+    .header {
+        font-size: 0.7em;
+    }
+    .header p {
+        font-size: 1.1rem;
+    }
 }
