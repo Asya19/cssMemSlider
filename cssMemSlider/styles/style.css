@@ -44,19 +44,22 @@ body {
     flex-direction: column;
     background: rgb(33, 33, 35);
     padding: 1em;
-    /* max-width: 900px;
-    width: 100%; */
     margin: 0 auto;
-    /* border: 1px red solid; */
+}
+.window-slide {
+    overflow: hidden;
+}
+.container-slides {
+    max-width: 2000px;
+    width: 100%;
+    display: flex;
 }
 .content-slider {
-    /* max-width: 800px;
-    margin: 0 auto; */
+    width: 120em;
 }
 .content-slider img {
     width: 100%;
 }
-
 .container-buttons {
     width: 100%;
     display: flex;
@@ -97,10 +100,13 @@ body {
     background: transparent;
     transition: .5s;
 }
-.container-text p {
+.text p {
     color: #fff;
     font-size: 1.5em;
     font-family: Arial-regular;
+}
+.container-text {
+   
 }
 
 
