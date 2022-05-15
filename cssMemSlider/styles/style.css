@@ -137,6 +137,12 @@
             width: 1em;
             height: 1em;
         }
+        .button+.button:active .square {
+            border: 0.15rem solid var(--hover-button);
+            background: transparent;
+            width: 0.5em;
+            height: 0.5em;
+        }
     /* message-container style */
 
     /* mobile style */
