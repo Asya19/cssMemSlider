@@ -47,7 +47,7 @@
             display: flex;
             flex-direction: column;
             max-width: 50em;
-            width: 71%;
+            width: 90%;
             margin: 0 auto;
             overflow: hidden;
             border-radius: 0.25em;
@@ -91,7 +91,7 @@
             width: 100%;
             transition: 0.5s ease-in-out;
             font-family: Arial-regular;
-            font-size: 1.8em;
+            font-size: 1.7em;
         }
         .message-item {
             color: var(--color-text);
@@ -109,8 +109,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 1.7em;
-            height: 2.7em;
+            width: 2em;
+            height: 2em;
             background: transparent;
             cursor: pointer;
         }
@@ -144,37 +144,6 @@
             height: 0.5em;
         }
     /* message-container style */
-
-    /* mobile style */
-
-        @media screen and (max-width: 768px) {
-            .header {
-                margin: 4.17vw auto;
-            }
-            
-            .title {
-                font-size: 6.25vw;
-            }
-            
-            .slider-container {
-                border: 2vw solid var(--slider-bg);
-            }
-
-            .message-container {
-                margin: 1em 0em;
-            }
-
-            .message-box {
-                font-size: 4vw;
-            }
-
-            .container-buttons {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-    /* mobile style */
 
     /* slider controls style*/
 
@@ -235,3 +204,56 @@
             height: 1em;
         }
     /* slider controls style*/
+
+    /* mobile style */
+    
+    @media screen and (max-width: 1280px) {
+        /* message slider */
+        #slide-1:target ~ .message-container .message-box { transform: translateX(1%); }
+        #slide-2:target ~ .message-container .message-box { transform: translateX(-99%); }
+        #slide-3:target ~ .message-container .message-box { transform: translateX(-199%); }
+        #slide-4:target ~ .message-container .message-box { transform: translateX(-299%); }
+    }
+
+    @media screen and (max-width: 768px) {
+        .header {
+            margin: 4.17vw auto;
+        }
+        
+        .title {
+            font-size: 6.25vw;
+        }
+        
+        .slider-container {
+            border: 2vw solid var(--slider-bg);
+        }
+
+        .message-container {
+            margin: 1em 0em;
+        }
+
+        .message-box {
+            font-size: 4vw;
+        }
+
+        .container-buttons {
+            width: 100%;
+            justify-content: center;
+        }
+        .slider-container {
+            width: 88%;
+        }
+
+        .slider {
+            width: 402%;
+        }
+    }
+    @media screen and (max-width: 321px) {
+        .slider {
+            width: 402%;
+        }
+    }
+     
+    
+
+/* mobile style */
